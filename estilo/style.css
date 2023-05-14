@@ -1,7 +1,20 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+:root {
+    --cor0: #91EC90;
+    --cor1: #3BBA39;
+    --cor2: #3AB538;
+    --cor3: #4BE848;
+    --cor4: #406940;
+
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-passion: 'Passion One', cursive;
+}
+
 body {
-    background-color: black;
+
 }
 
 * {
@@ -9,8 +22,49 @@ body {
     padding: 0px;
 }
 
-header > img {
-    display: block;
-    margin: auto;
-    width: 800px;
+header {
+ background-image: linear-gradient(to top, var(--cor0), var(--cor3));
+ text-align: center;
+}
+
+header > h1 {
+    font-family: var(--fonte-passion);
+    font-weight: normal;
+    font-variant: small-caps;
+    color: rgb(0, 0, 0);
+    font-size: 10vh;
+
+    padding-top: 50px;
+}
+
+header > p {
+    font-family: var(--fonte-passion);
+    padding-bottom: 50px;
+    font-size: 3vh;
+}
+
+header > p::before {
+    content: "🐾 ";
+}
+
+nav {
+    background-color: var(--cor0);
+    padding-bottom: 3px;
+}
+
+nav > a {
+    font-family: var(--fonte-passion);
+    color: var(--cor4);
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 2.8vh;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor0);
+    transition: 0.3s;
 }
