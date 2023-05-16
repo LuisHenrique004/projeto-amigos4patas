@@ -14,6 +14,9 @@
 }
 
 body {
+    background-image: url('../imagens/fundo.jpg');
+    min-height: 98vh;
+    background-attachment: fixed;
 
 }
 
@@ -23,8 +26,9 @@ body {
 }
 
 header {
- background-image: linear-gradient(to top, var(--cor0), var(--cor3));
+ background-image: linear-gradient(to top, var(--cor0), var(--cor2));
  text-align: center;
+ box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);
 }
 
 header > h1 {
@@ -33,6 +37,7 @@ header > h1 {
     font-variant: small-caps;
     color: rgb(0, 0, 0);
     font-size: 10vh;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.411);
 
     padding-top: 50px;
 }
@@ -41,6 +46,7 @@ header > p {
     font-family: var(--fonte-passion);
     padding-bottom: 50px;
     font-size: 3vh;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
 }
 
 header > p::before {
@@ -64,7 +70,24 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color: var(--cor2);
-    color: var(--cor0);
+    background-color: var(--cor4);
+    color: white;
     transition: 0.3s;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section > h1 {
+    padding: 20px;
+}
+
+section > p {
+    padding: 5px;
+    text-indent: 20px;
+    line-height: 2em;
 }
