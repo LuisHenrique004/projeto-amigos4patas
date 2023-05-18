@@ -3,19 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
 :root {
-    --cor0: #91EC90;
-    --cor1: #3BBA39;
-    --cor2: #3AB538;
-    --cor3: #4BE848;
-    --cor4: #406940;
+    --cor0: #6ADD68;
+    --cor1: #36D633;
+    --cor2: #2DAE2A;
+    --cor3: #279C25;
+    --cor4: #046103;
+    --cor5: #90E08D;
 
     --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
     --fonte-passion: 'Passion One', cursive;
 }
 
 body {
-    background-image: url('../imagens/fundo.jpg');
-    min-height: 98vh;
+    background-image: url('../imagens/fundo1.png');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 
 }
@@ -26,7 +29,7 @@ body {
 }
 
 header {
- background-image: linear-gradient(to top, var(--cor0), var(--cor2));
+ background-image: linear-gradient(to top, var(--cor1), var(--cor4));
  text-align: center;
  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);
 }
@@ -54,23 +57,23 @@ header > p::before {
 }
 
 nav {
-    background-color: var(--cor0);
+    background-color: var(--cor1);
     padding-bottom: 3px;
 }
 
 nav > a {
     font-family: var(--fonte-passion);
-    color: var(--cor4);
+    color: black;
     text-decoration: none;
     padding-right: 20px;
     padding-left: 20px;
-    font-size: 2.8vh;
+    font-size: 2em;
     border-radius: 5px;
     margin-left: 5px;
 }
 
 nav > a:hover {
-    background-color: var(--cor4);
+    background-color: var(--cor1);
     color: white;
     transition: 0.3s;
 }
