@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
 :root {
-    --cor0: #6ADD68;
-    --cor1: #36D633;
-    --cor2: #2DAE2A;
-    --cor3: #279C25;
-    --cor4: #046103;
-    --cor5: #90E08D;
+    --cor0: #69FB8B;
+    --cor1: #1EFA51;
+    --cor2: #18C741;
+    --cor3: #337A44;
+    --cor4: #0F7A28;
+    --cor5: #A0FA9E;
 
     --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
     --fonte-passion: 'Passion One', cursive;
@@ -17,9 +17,9 @@
 body {
     background-image: url('../imagens/fundo1.png');
     min-height: 100vh;
-    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    
 
 }
 
@@ -29,16 +29,16 @@ body {
 }
 
 header {
- background-image: linear-gradient(to top, var(--cor1), var(--cor4));
+ background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
  text-align: center;
- box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);
+ box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.514);
 }
 
 header > h1 {
     font-family: var(--fonte-passion);
     font-weight: normal;
     font-variant: small-caps;
-    color: rgb(0, 0, 0);
+    color: white;
     font-size: 10vh;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.411);
 
@@ -48,6 +48,7 @@ header > h1 {
 header > p {
     font-family: var(--fonte-passion);
     padding-bottom: 50px;
+    color: white;
     font-size: 3vh;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
 }
@@ -57,7 +58,7 @@ header > p::before {
 }
 
 nav {
-    background-color: var(--cor1);
+    background-color: var(--cor4);
     padding-bottom: 3px;
 }
 
