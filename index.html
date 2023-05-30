@@ -14,7 +14,8 @@
         <h1>Amigos 4 Patas - Serra Talhada</h1>
         <p>SOCORREMOS, ABRIGAMOS, CUIDAMOS E ALIMENTAMOS ANIMAIS DE RUA</p>
     </header>
-    <nav> 
+    <nav id="itens"> 
+        <span class="material-icons" onclick="clickMenu()">menu</span>
         <a href="#">Sobre</a>
         <a href="#">Contatos</a>
         <a href="#">Contribuição</a>
@@ -65,5 +66,13 @@
             </p>
         </section>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {itens.style.display = 'blcok'}
+        }
+    </script>
 </body>
 </html>
