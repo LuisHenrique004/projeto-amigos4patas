@@ -20,7 +20,6 @@
     
 }
 
-
 body {
     background-image: url('../imagens/fundo.jpg');
     min-height: 100vh;
@@ -57,12 +56,7 @@ header > p {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
 }
 
-header > p::before {
-    content: "🐾 ";
-}
-
 nav {
-    display: block;
     background-color: var(--cor2);
     padding-bottom: 3px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.253);
@@ -79,36 +73,15 @@ nav > a {
     margin-left: 5px;
 }
 
-
-
 nav > a:hover {
     background-color: var(--cor5);
     color: var(--cor4);
     transition: 0.3s;
 }
 
-span.material-icons {
-    color: white;
-    text-decoration: none;
-    padding-right: 20px;
-    padding-left: 20px;
-    font-size: 1.5em;
-    border-radius: 5px;
-    margin-left: 5px;
-}
-
-
-span.material-icons:hover {
-    background-color: var(--cor5);
-    color: var(--cor4);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
 main {
     background-color: white;
-    min-width: 200px;
-    max-width: 300px;
+    width: 330px;
     margin: auto;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -117,6 +90,7 @@ main {
 
 section > h1 {
     padding: 20px;
+    color: var(--cor4);
 }
 
 section > p {
