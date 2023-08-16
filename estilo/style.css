@@ -21,7 +21,7 @@
 }
 
 body {
-    background-image: url('../imagens/fundo.jpg');
+    background-color: #cafda0;
     min-height: 100vh;
     background-position: left center;
     background-repeat: repeat;
